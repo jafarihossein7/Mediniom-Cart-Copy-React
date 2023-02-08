@@ -1,5 +1,5 @@
 import React from 'react'
-import callIcon from "../images/support.webp"
+import callIcon from "../../images/icon/support.webp"
 
 export default function CallUs() {
     return (

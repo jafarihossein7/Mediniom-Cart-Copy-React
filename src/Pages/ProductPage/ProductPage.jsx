@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Layout from '../../Components/Layout'
 import { get } from '../../Services/Http'
-import loading1 from "../../Gif/loading1.gif";
+import loading1 from "../../images/gif/loading1.gif";
 import { useCartFunctions, useProductState } from '../../Context/product-context';
-import ProductDetails from './ProductDetails';
-import DesktopProductDetails from './DesktopProductDetails';
+import ProductDetails from '../../Components/Product/ProductDetails';
+import DesktopProductDetails from '../../Components/Product/DesktopProductDetails';
 
 export default function ProductPage() {
   const [productData, setproductData] = useState(null)

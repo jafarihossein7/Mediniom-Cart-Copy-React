@@ -1,14 +1,14 @@
 import React from 'react'
-import BreadCrumb from '../../Body-Components/BreadCrumb';
+import BreadCrumb from '../Body/BreadCrumb';
 import { useCartFunctions } from '../../Context/product-context';
-import AddToCart from './Components/AddToCart';
-import Price from './Components/Price';
-import ProductImage from './Components/ProductImage';
-import ProductShopData from './Components/ProductShopData';
-import ProductTitle from './Components/ProductTitle';
-import SendProduct from './Components/SendProduct';
-import Warning from './Components/Warning';
-import ProductProperties from './Components/ProductProperties';
+import AddToCart from '../Product/AddToCart';
+import Price from '../Product/Price';
+import ProductImage from '../Product/ProductImage';
+import ProductShopData from '../Product/ProductShopData';
+import ProductTitle from '../Product/ProductTitle';
+import SendProduct from '../Product/SendProduct';
+import Warning from '../Product/Warning';
+import ProductProperties from '../Product/ProductProperties';
 
 export default function ProductDetails({
     image,

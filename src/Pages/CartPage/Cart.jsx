@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../../Components/Layout'
 import { useCartFunctions, useProductState } from '../../Context/product-context'
-import Price from '../ProductPage/Components/Price'
-import CartButton from './CartButton'
-import CartProduct from './CartProduct'
-import ShopLevel from './ShopLevel'
-import Input from './Input'
+import Price from '../../Components/Product/Price'
+import CartButton from '../../Components/Cart/CartButton'
+import CartProduct from '../../Components/Cart/CartProduct'
+import ShopLevel from '../../Components/Cart/ShopLevel'
+import Input from '../../Components/Cart/Input'
 
 export default function Cart() {
   const [shopSituation, setshopSituation] = useState("cart")
@@ -19,13 +19,17 @@ export default function Cart() {
   let currentProduct = cartProduct.map((value) => {
     return value
   })
-  let currentPrice;
-  let currentCount;
+  let currentPrice = 0;
   let productId;
-  currentProduct.length ? currentPrice = currentProduct[0].price : null
-  currentProduct.length ? currentCount = currentProduct[0].count : null
   currentProduct.length ? productId = currentProduct[0].id : null
 
+  if (currentProduct.length > 0) {
+    for (let i = 0; i < currentProduct.length; i++) {
+      currentPrice += currentProduct[i].price * currentProduct[i].count
+    }
+  } else {
+    null
+  }
 
   function compeleteBuy() {
     setshopSituation("sendInformation")
@@ -74,7 +78,7 @@ export default function Cart() {
               </div>
               <div className="left">
                 <div className='bg-white h-fit px-4 py-2 rounded-xl mt-32'>
-                  <Price price={currentPrice} count={currentCount} />
+                  <Price price={currentPrice} />
                   <CartButton shopSituation={shopSituation} compeleteBuy={compeleteBuy} sendInformation={sendInformation} />
                 </div>
               </div>

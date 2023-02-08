@@ -1,5 +1,5 @@
 import React from 'react'
-import shopProfile from "../../../images/empty-shop-profile.webp"
+import shopProfile from "../../images/icon/empty-shop-profile.webp"
 
 export default function ProductShopData({shopName,shopCity,quantity,diffDays}) {
     return (

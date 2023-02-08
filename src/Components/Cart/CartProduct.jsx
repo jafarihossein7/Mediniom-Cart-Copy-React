@@ -1,8 +1,8 @@
 import React from 'react'
-import ProductImage from '../ProductPage/Components/ProductImage'
-import ProductTitle from '../ProductPage/Components/ProductTitle'
-import Price from '../ProductPage/Components/Price'
-import AddToCart from '../ProductPage/Components/AddToCart'
+import ProductImage from '../Product/ProductImage'
+import ProductTitle from '../Product/ProductTitle'
+import Price from '../Product/Price'
+import AddToCart from '../Product/AddToCart'
 
 export default function CartProduct({ faName, image, price, quantity, count, increaseProduct, decreaseProduct, productId  }) {
     

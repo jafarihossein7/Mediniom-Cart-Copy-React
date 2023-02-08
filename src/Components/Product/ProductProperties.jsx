@@ -1,5 +1,5 @@
 import React from 'react'
-import CheckIcon from '../../../SVG/CheckIcon'
+import CheckIcon from '../../SVG/CheckIcon'
 
 export default function ProductProperties({ properties }) {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/typo-mediniom.png"
+import logo from "../../images/typo-mediniom.png"
 
 export default function Logo() {
     return (

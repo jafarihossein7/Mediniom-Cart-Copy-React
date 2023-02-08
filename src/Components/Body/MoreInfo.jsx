@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MoreInfoIcon from '../SVG/MoreInfoIcon'
+import MoreInfoIcon from '../../SVG/MoreInfoIcon'
 
 export default function MoreInfo({ title, detail }) {
     const [toggleMoreInfo, settoggleMoreInfo] = useState(false)

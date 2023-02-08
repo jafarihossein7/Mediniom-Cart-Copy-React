@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { useProductState } from '../Context/product-context';
 import { useDarkMode } from '../Context/theme-context';
-import CallUs from '../Header-Components/CallUs';
-import CartIcon from '../Header-Components/CartIcon';
-import DesktopLogin from '../Header-Components/DesktopLogin';
-import HeaderSearch from '../Header-Components/HeaderSearch';
-import Logo from '../Header-Components/Logo';
-import MobileLogin from '../Header-Components/MobileLogin';
-import MobileSearch from '../Header-Components/MobileSearch';
+import CallUs from './Header/CallUs';
+import CartIcon from './Header/CartIcon';
+import DesktopLogin from './Header/DesktopLogin';
+import HeaderSearch from './Header/HeaderSearch';
+import Logo from './Header/Logo';
+import MobileLogin from './Header/MobileLogin';
+import MobileSearch from './Header/MobileSearch';
 
 export default function Header() {
     // const { toggleDarkMode, colorTheme } = useDarkMode()

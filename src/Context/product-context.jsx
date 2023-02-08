@@ -42,7 +42,7 @@ export default function ProductProvider({ children }) {
       image: productData.imageList[1].image,
       price: productData.shopItemList[0].price,
       id: productData.itemCode,
-      quantity: productData.shopItemList[0].quantity,
+      quantity: productData.shopItemList[0].shop.itemsCount,
       count: 1
     }
     let oldProducts = state.cartProduct

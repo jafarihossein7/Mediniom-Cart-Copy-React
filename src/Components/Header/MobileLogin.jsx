@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from '../SVG/Login'
+import Login from '../../SVG/Login'
 
 export default function MobileLogin() {
     return (

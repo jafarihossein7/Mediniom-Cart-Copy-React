@@ -24,7 +24,7 @@ export default function AddToCart({
                             <div className='px-2 bg-[#f0f1f3]'>
                                 {count}
                             </div>
-                            <button onClick={count != quantity ? () => increaseProduct(productId) : null} className={`${count == quantity ? "bg-blue-200" : "bg-[#f0f1f3]"}  text-[#3aa2b5] text-lg font-bold rounded-tr-lg rounded-br-lg px-4`}>
+                            <button disabled={count >= quantity ? true : false} onClick={() => increaseProduct(productId)} className={`${count >= quantity ? "bg-blue-200" : "bg-[#f0f1f3]"}  text-[#3aa2b5] text-lg font-bold rounded-tr-lg rounded-br-lg px-4`}>
                                 +
                             </button>
                         </>

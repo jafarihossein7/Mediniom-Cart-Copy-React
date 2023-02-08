@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../../Components/Layout'
 import { get } from '../../Services/Http'
-import Product from './Product'
-import loading1 from "../../Gif/loading1.gif"
+import Product from '../../Components/Products/Product'
+import loading1 from "../../images/gif/loading1.gif"
 import ReactPaginate from 'react-paginate';
 import { useParams, useSearchParams, useNavigate } from 'react-router-dom'
-import MoreInfo from '../../Body-Components/MoreInfo'
-import BreadCrumb from '../../Body-Components/BreadCrumb'
+import MoreInfo from '../../Components/Body/MoreInfo'
+import BreadCrumb from '../../Components/Body/BreadCrumb'
 
 export default function Products() {
     const [products, setproducts] = useState(null)

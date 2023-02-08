@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from "react-router-dom"
-import BreadCrumbIcon from '../SVG/BreadCrumbIcon'
+import BreadCrumbIcon from '../../SVG/BreadCrumbIcon'
 
 export default function BreadCrumb({ links }) {
     return (

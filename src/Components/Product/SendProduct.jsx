@@ -1,5 +1,5 @@
 import React from 'react'
-import ShoppingCart from '../../../SVG/ShoppingCart'
+import ShoppingCart from '../../SVG/ShoppingCart'
 
 export default function SendProduct() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Search from '../SVG/Search'
+import Search from '../../SVG/Search'
 
 export default function MobileSearch() {
     return (
